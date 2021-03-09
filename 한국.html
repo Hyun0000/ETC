@@ -21,36 +21,41 @@ li {line-height: 2;
     font-weight: bold;
     color:red;
     letter-spacing: 10px;}
-ul {margin-top:20px;
+ul {margin-top:0px;
     text-align:center;
     font-size:70px;
     padding:0;
     list-style:none;}
 body {background-color:black;
       margin-right:60px;
-      margin-left:50px;}
+      margin-left:50px;
+      margin-top:30px;}
 a {text-decoration:none;}
-.img {}
-.list {}
+#main {display: grid;
+grid-template-columns: 300px 1fr;}
     </style>
 
   </head>
   <body>
-<a href="index.html"><h6>NETFLIX-ASIA</h6></a>
-<h1>KOREA</h1>
-<div class="img">
-<img src="한국.png" alt="한국">
-</div>
-<div class="list">
-<ul>
-    <li>ACTION</li>
+<div id="main">
+  <div>
+  <a href="index.html"><h6>NETFLIX-ASIA</h6></a>
+  <h1>KOREA</h1>
+  <img src="한국.png" alt="한국">
+  </div>
+
+  <div>
+  <ul>
+  <li>ACTION</li>
   <li>SF</li>
   <li>COMEDY</li>
   <li>MUSICAL</li>
   <li>ANIMATION</li>
   <li>HORROR</li>
   <li>DOCUMENTARY</li>
-</ul>
+  </ul>
+  </div>
 </div>
+
   </body>
 </html>
