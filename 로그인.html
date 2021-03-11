@@ -2,61 +2,38 @@
 <html lang="ko">
   <head>
     <meta charset="utf-8">
-    <title>NETFLIX-AISA</title>
+    <title>NETFLIX-ASIA</title>
     <style>
-h1 {color:red; text-align:center; font-size: 110px; margin-top:20px; background-color: black;}
-body {background-color:black;}
-
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 10px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: yellow;
-}
-
-div {
-  border-radius: 5px;
-  background-color: blue;
-  padding: 20px;
+      body{
+        margin: 50;
+        padding: 0;
+        font-family: sans-serif;
+        background: url(net.png) no-repeat;
+        background-size:cover;}
+        .login{
+          width: 200px;
+          position: absolute;
+          top:50%; left:50%;
+          transform: translate(-50%, -50%);
+          color: white;
+        }
+.textbox{
+  width: 50%;
 }
     </style>
   </head>
   <body>
-    <div>
-      <form action="/action_page.php">
-        <label for="ID">ID</label>
-        <input type="text" id="fname" name="firstname" placeholder="ID">
+<div class="login">
+  <div class="textbox">
+  <input type="text" placeholder="ID" name="" value="">
+  </div>
 
-        <label for="PW">PW</label>
-        <input type="text" id="lname" name="lastname" placeholder="Password">
+  <div class="textbox">
+  <input type="text" placeholder="PW" name="" value="">
+  </div>
 
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="KOREA">KOREA</option>
-          <option value="JAPAN">JAPAN</option>
-          <option value="INDIA">INDIA</option>
-          <option value="CHINA">CHINA</option>
-        </select>
-        <input type="submit" value="log in">
-      </form>
-    </div>
+  <input type="button" class="button" name="" value="Sign In">
+
+</div>
   </body>
 </html>

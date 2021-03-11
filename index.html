@@ -4,31 +4,49 @@
     <meta charset="utf-8">
     <title>NETFLIX-AISA</title>
     <style>
-h1 {color:red; text-align:center; font-size: 110px; margin-top:20px; background-color: black;}
-li {margin-top:50px;
-    font-weight: bold;
-    color:red;
-    }
-ul {margin-top:90px;
-    text-align:center;
+#NETFLIX {text-align: center;
+          font-size: 110px;
+          margin-top:35px;
+          margin-bottom:20px;
+          margin-left: 350px;
+          margin-right: 350px;
+          background-color: black;
+          border-bottom: 10px double red;}
+a {text-decoration: none;
+  color:red;}
+li {margin-top:50px;}
+ul {margin-top:60px;
     font-size:90px;
     padding:0;
     list-style:none;
-    padding-left: 600px;
-    padding-right: 600px;
-    }
-body {background-color:black;}
-a {text-decoration:none;}
-a:visited {color:red;}
+    font-weight: bold;}
+body {background-color:black;
+font-family: Arial, Helvetica, sans-serif;}
+.table {font-size: 55px;}
+#grid {display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 90px 90px 90px;
+grid-gap: 30px;
+text-align: center;
+font-weight: bold;
+margin-top: 75px;}
 </style>
   </head>
   <body>
-<h1><a href="index.html">NETFLIX-ASIA</h1></a>
-<ul>
-  <a href=한국.html target="_blank" title="한국"><li>KOREA</li></a>
-  <a href=일본.html target="_blank" title="일본"><li>JAPAN</li></a>
-  <a href=인도.html target="_blank" title="인도"><li>INDIA</li></a>
-  <a href=중국.html target="_blank" title="중국"><li>CHINA</li></a>
-</ul>
+<h1 id="NETFLIX"><a href="index.html">NETFLIX-ASIA</h1></a>
+<div id="grid">
+  <div><a href=한국.html target="_blank" title="한국" class="table" >KOREA</a></div>
+  <div><a href=미얀마.html target="_blank" title="미얀마" class="table">MYANMAR</a></div>
+  <div><a href=일본.html target="_blank" title="일본" class="table">JAPAN</a></div>
+  <div><a href=캄보디아.html target="_blank" title="캄보디아" class="table">CAMBODIA</a></div>
+  <div><a href=베트남.html target="_blank" title="베트남" class="table">VIETNAM</a></div>
+  <div><a href=인도.html target="_blank" title="인도" class="table">INDIA</a></div>
+  <div><a href=싱가포르.html target="_blank" title="싱가포르" class="table">SINGAPORE</a></div>
+  <div><a href=터키.html target="_blank" title="터키" class="table">TURKEY</a></div>
+  <div><a href=중국.html target="_blank" title="중국" class="table">CHINA</a></div>
+  <div><a href=인도네시아.html target="_blank" title="인도네시아" class="table">INDONESIA</a></div>
+  <div><a href=태국.html target="_blank" title="태국" class="table">THAILAND</a></div>
+  <div><a href=이란.html target="_blank" title="이란" class="table">IRAN</a></div>
+</div>
   </body>
 </html>
