@@ -3,37 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>NETFLIX-JAPAN</title>
-    <style>
-h1{color:red;
-    text-align:left;
-    font-size: 110px;
-    margin-top:0px;
-    margin-bottom: 20px;
-    background-color: black;
-    letter-spacing: 30px;}
-h6 {margin: 10px;
-    text-align: left;
-    color:red;
-    font-size:30px;
-    display: inline;}
-ul {margin-top:0px;
-    font-size:70px;
-    padding:0;
-    list-style:none;
-    line-height: 2;
-    text-align:right;
-    font-weight: bold;
-    color:red;
-    letter-spacing: 10px;}
-body {background-color:black;
-      margin-right:60px;
-      margin-left:50px;
-      margin-top:30px;}
-a {text-decoration:none;}
-#main {display: grid;
-grid-template-columns: 300px 1fr;}
-    </style>
-
+<link rel="stylesheet" href="country.css">
   </head>
   <body>
     <div id="main">
@@ -41,20 +11,20 @@ grid-template-columns: 300px 1fr;}
       <a href="index.html"><h6>NETFLIX-ASIA</h6></a>
       <h1>JAPAN</h1>
       <img src="일본.jpeg" alt="JAPAN">
+      <input type="text" name="search" value="Search...">
       </div>
 
       <div>
       <ul>
-      <li>ACTION</li>
-      <li>SF</li>
-      <li>COMEDY</li>
-      <li>MUSICAL</li>
-      <li>ANIMATION</li>
-      <li>HORROR</li>
-      <li>DOCUMENTARY</li>
+      <li class="all" id="action">ACTION</li>
+      <li class="all" id="sf">SF</li>
+      <li class="all" id="comedy">COMEDY</li>
+      <li class="all" id="musical">MUSICAL</li>
+      <li class="all" id="animaion">ANIMATION</li>
+      <li class="all" id="horror">HORROR</li>
+      <li class="all" id="documentary">DOCUMENTARY</li>
       </ul>
       </div>
     </div>
-
       </body>
     </html>
