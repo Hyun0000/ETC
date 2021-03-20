@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>alone</title>
+
+
+<style>
+  main {
+  max-width: 1200px;
+  margin: 3rem auto;
+  margin-top: 90px;}
+
+
+      h1{text-align: center;
+      margin-top: 30px;
+      font-size: 70px;
+    letter-spacing: 30px;
+  color: pink;}
+
+
+      body{background-color: #1DA1F2;
+      margin-left : 60px;
+    margin-right : 60px;
+  margin-top: 20px;}
+
+
+      span{border-bottom: 10px solid white;
+      padding-bottom: 20px;}
+
+      .news-feed {display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  grid-gap: 50px;
+                margin-top: 85px;}
+
+img {width: 100%;}
+
+#dogcat {border: 5px white solid;
+padding: 5px;}
+
+</style>
+
+
+  </head>
+  <body>
+
+<header>
+      <input id="animal" type="button" value="고양이" onclick="
+      if(document.querySelector('#animal').value === '고양이')
+      {document.querySelector('body').style.backgroundColor = '#FFD700';
+      document.querySelector('h1').style.color = 'white';
+      document.querySelector('#animal').value = '강아지';
+    }
+      else
+      {document.querySelector('body').style.backgroundColor = '#1DA1F2';
+      document.querySelector('h1').style.color = 'pink';
+      document.querySelector('#animal').value = '고양이';}
+      ">
+
+      <input type="button" value="고양이" onclick="
+      var name = document.querySelector('body');
+      var font = document.querySelector('h1');
+      if(this.value === '고양이')
+      {name.style.backgroundColor = '#FFD700';
+      font.style.color = 'white';
+      this.value = '강아지';
+    }
+      else
+      {name.style.backgroundColor = '#1DA1F2';
+      font.style.color = 'pink';
+      this.value = '고양이';}
+      ">
+
+      </header>
+
+
+<main>
+<h1><span>alone</span></h1>
+
+<section class="news-feed">
+  <img src="http://via.placeholder.com/293x293">
+  <img src="http://via.placeholder.com/293x293">
+  <img src="http://via.placeholder.com/293x293">
+  <img src="http://via.placeholder.com/293x293">
+  <img src="http://via.placeholder.com/293x293">
+  <img src="http://via.placeholder.com/293x293">
+  <img src="http://via.placeholder.com/293x293">
+  <img src="http://via.placeholder.com/293x293">
+  <img src="http://via.placeholder.com/293x293">
+</section>
+
+</main>
+  </body>
+</html>
