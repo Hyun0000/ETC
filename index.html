@@ -2,18 +2,17 @@
 <html lang="ko" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>alone</title>
-
-
+    <title>ALONE</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
   main {
   max-width: 1200px;
   margin: 3rem auto;
-  margin-top: 90px;}
+  margin-top: 10px;}
 
 
       h1{text-align: center;
-      margin-top: 30px;
+      margin-top: 70px;
       font-size: 70px;
     letter-spacing: 30px;
   color: pink;}
@@ -22,7 +21,7 @@
       body{background-color: #1DA1F2;
       margin-left : 60px;
     margin-right : 60px;
-  margin-top: 20px;}
+  margin-top: 10px;}
 
 
       span{border-bottom: 10px solid white;
@@ -38,44 +37,71 @@ img {width: 100%;}
 #dogcat {border: 5px white solid;
 padding: 5px;}
 
+#btn{position: absolute;
+left: 1350px;
+top: 50px;
+border: 5px solid yellow;
+border-radius: 30px;
+font-size: 30px;
+font-weight: bold;
+color: yellow;
+background-color: #1DA1F2;
+padding-left: 20px;
+padding-right: 20px;
+outline: 0;}
+
+#icon{position: fixed;
+left: 10px;
+top: 25px;
+color: white;}
+
+i {
+margin-bottom: 10px;
+padding-bottom: 10px;}
+
+#search {outline: none;
+text-align:center;
+background-color: #1DA1F2;
+border-bottom: 1px solid white;
+border-left : none;
+border-top : none;
+border-right : none;
+width: 25%;
+color: white;}
+
 </style>
 
 
   </head>
   <body>
-
-<header>
-      <input id="animal" type="button" value="고양이" onclick="
-      if(document.querySelector('#animal').value === '고양이')
-      {document.querySelector('body').style.backgroundColor = '#FFD700';
-      document.querySelector('h1').style.color = 'white';
-      document.querySelector('#animal').value = '강아지';
-    }
-      else
-      {document.querySelector('body').style.backgroundColor = '#1DA1F2';
-      document.querySelector('h1').style.color = 'pink';
-      document.querySelector('#animal').value = '고양이';}
-      ">
-
-      <input type="button" value="고양이" onclick="
-      var name = document.querySelector('body');
-      var font = document.querySelector('h1');
-      if(this.value === '고양이')
-      {name.style.backgroundColor = '#FFD700';
-      font.style.color = 'white';
-      this.value = '강아지';
-    }
-      else
-      {name.style.backgroundColor = '#1DA1F2';
-      font.style.color = 'pink';
-      this.value = '고양이';}
-      ">
-
-      </header>
-
-
+<input id="search" type="text" name="" value="search...">
 <main>
-<h1><span>alone</span></h1>
+
+  <header>
+        <input id="btn" type="button" value="고양이" onclick="
+        var name = document.querySelector('body');
+        var font = document.querySelector('h1');
+        var btn = document.querySelector('#btn')
+        if(this.value === '고양이')
+        {name.style.backgroundColor = '#FFD700';
+        font.style.color = 'white';
+        btn.style.backgroundColor = '#FFD700';
+        btn.style.color = 'white';
+        btn.style.borderColor = 'white';
+        this.value = '강아지';
+      }
+        else
+        {name.style.backgroundColor = '#1DA1F2';
+        font.style.color = 'pink';
+        btn.style.backgroundColor = '#1DA1F2';
+        btn.style.color = 'pink';
+        btn.style.borderColor = 'pink';
+        this.value = '고양이';}
+        ">
+
+        </header>
+
+<h1><span>ALONE</span></h1>
 
 <section class="news-feed">
   <img src="http://via.placeholder.com/293x293">
@@ -89,6 +115,13 @@ padding: 5px;}
   <img src="http://via.placeholder.com/293x293">
 </section>
 
+<div id="icon">
+<div><i class="fa fa-clock-o fa-3x" aria-hidden="true"></i></div>
+<div><i class="fa fa-handshake-o fa-2x" aria-hidden="true"></i></div>
+<div><i class="fa fa-address-book-o fa-3x" aria-hidden="true"></i></div>
+<div><i class="fa fa-podcast fa-3x" aria-hidden="true"></i></div>
+<div><i class="fa fa-comments fa-3x" aria-hidden="true"></i></div>
+</div>
 </main>
   </body>
 </html>
