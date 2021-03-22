@@ -44,8 +44,5 @@ h1{color:red;
   grid-template-columns: 1fr;
   text-align: center;}
   li{text-align: center;}
-  h1 {border: red 1px solid;}
-  header {position: absolute;
-  left: 0px;}
   }
   
