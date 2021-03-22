@@ -21,16 +21,18 @@
   </div>
 
   <div>
-  <ul>
-    <li class="all" id="action"><span>ACTION</li></span>
-    <li class="all" id="sf"><span>SF</li></span>
-    <li class="all" id="comedy"><span>COMEDY</li></span>
-    <li class="all" id="musical"><span>MUSICAL</li></span>
-    <li class="all" id="animaion"><span>ANIMATION</li></span>
-    <li class="all" id="horror"><span>HORROR</li></span>
-    <li class="all" id="documentary"><span>DOCUMENTARY</li></span>
-  </ul>
-  </div>
+    <ul>
+  <script>
+   var genre = ['ACTION','SF','COMEDY','MUSICAL','ANIMATION','HORROR','DOCUMENTARY'];
+   var i = 0;
+   while (i < genre.length) {
+     document.write('<li><span>'+genre[i]+'</span></li>');
+     i = i + 1;   
+   }
+  
+  </script>
+    </ul>
+    </div>
 </div>
 
   </body>

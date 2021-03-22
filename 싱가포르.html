@@ -19,19 +19,19 @@
   <div>
   <h1>SINGAPORE</h1>
   <img src="Flag/싱가포르.png" alt="SINGAPORE">
-  <input type="text" name="search" onfocus="this.value=''" value="Search...">
   </div>
 
   <div>
-  <ul>
-  <li class="all" id="action">ACTION</li>
-  <li class="all" id="sf">SF</li>
-  <li class="all" id="comedy">COMEDY</li>
-  <li class="all" id="musical">MUSICAL</li>
-  <li class="all" id="animaion">ANIMATION</li>
-  <li class="all" id="horror">HORROR</li>
-  <li class="all" id="documentary">DOCUMENTARY</li>
-  </ul>
+    <ul>
+  <script>
+    var genre = ['ACTION','SF','COMEDY','MUSICAL','ANIMATION','HORROR','DOCUMENTARY'];
+    var i = 0;
+    while (i < genre.length) {
+   document.write('<li><span>'+genre[i]+'</li></span>');
+   i = i + 1;
+    }
+  </script>
+    </ul>
   </div>
 </div>
 
