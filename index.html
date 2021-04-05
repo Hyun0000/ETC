@@ -6,54 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CODEGATE</title>
     <script src="https://kit.fontawesome.com/1061bd59d7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
-    <h1>&lt;CodeGate&gt;</h1>
+    <header class="top-bottom">
+        <h1>&lt;CodeGate&gt;</h1>
+    </header>
 
-    <nav class="manu_bar">
-        <div class="mau_icon">
-            <i class="fa fa-code" aria-hidden="true"></i>
-            <span>CODE GATE</span>
-        </div>
-
-        <ul class="manu_list">
-            <script>
-                nav_listmane();
-            </script>
+        <main class="category">
+        <ul class="maun-list">
+            <li class="manu-item"><a href="fornt.html" class="mainlink">FRONT-END</a></li>
+            <li class="manu-item"><a href="back.html" class="mainlink">BACK-END</a></li>
+            <li class="manu-item"><a href="full.html" class="mainlink">FULL-STACK</a></li>
+            <li class="manu-item"><a href="ai.html" class="mainlink">AI</a></li>
+            <li class="manu-item"><a href="cloud.html" class="mainlink">CLOUD</a></li>
         </ul>
+    </main>
 
-    </nav>
 
-<div class="information">
-    <ul class=languagecategory>
-        <li class="front" value="fr">FRONT-END</li>
-        <li class="back" onclick="
-        if (document.querySelector('.languagecategory')) {
-            
-        }
-        document.querySelector('.languagecategory').style.backgroundColor = '#A84FFF';
-        ">BACK-END</li>
-    </ul>
-
-    <!-- <ul class="language">
-        <script>
-            var frontlanguage = ['HTMl','CSS','JAVASCRIPT','REACT','VUE','BOOTSTRAP'];
-            var backlanguage = ['JAVA','C','C++','C#','PYTHON','RUBY'];
-        </script>
-    </ul> -->
-
-<div class="image">
-        <img src="이미지/HTML.png" alt="HTML" width='800px' height='500px'>
-    </div> 
-</div>
-
-<div class="checkboxbar">
-    <input type="checkbox">
-</div>
-
-    <footer>
+    <footer class="top-bottom">
         <h1>&lt;/CodeGate&gt;</h1>
     </footer>
 </body>
