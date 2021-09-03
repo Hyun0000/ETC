@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <meta charset="utf-8"/>
+    <meta name="description" content="코딩 입문자들을 위한 가이드 북"/>
+    <meta name="keywords" content="HTML, CSS, JAVASCRIPT, FRONT-END, BACK-END, PHP, 파이썬, JAVA, 자바"/>
+    <meta name="author" content="Radder Kim"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <script src="https://kit.fontawesome.com/1061bd59d7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/head.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/login_modal.css">
+    <link rel="stylesheet" href="./css/side_tab.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <title>HELLO WORLD</title>
+</head>
+<body>
+    <!-- 로그인&회원가입 모달창 -->
+    <div class="login_modal">
+        <form action="login.php">
+                <div class="form-group">
+                  <input type="email" class="ID" placeholder="Email" id="email">
+                </div>
+
+                <div class="form-group">
+                  <input type="password" class="PW" placeholder="Password" id="pw">
+                </div>
+
+                <ul class="sing_btn">
+                <li><button id="log">로그인</button></li>
+                <li><button id="join">회원가입</button></li>
+                </ul>
+        </form>
+        <i class="fa fa-times" aria-hidden="true" id="closeicon"></i>
+    </div>
+
+    <div id="input_id">
+        <ul>
+        <li><p>이메일을 입력하세요</p></li>
+        <li><button id="modal_close">확인</button></li>
+        </ul>
+    </div>
+
+    <div id="input_pw">
+        <ul>
+        <li><p>비밀번호를 입력하세요</p></li>
+        <li><button id="modal_close">확인</button></li>
+        </ul>
+    </div>    
+    <!-- 로그인&회원가입 모달창 -->
+
+    <!-- 네비게이션 누르면 나오는 사이드탭 -->
+    <div class="front_side">
+        <ul class="front">
+            <script src="./js/side.js"></script>
+        </ul>
+    </div>
+    <!-- 네비게이션 누르면 나오는 사이드탭 -->
+
+    <!-- 헤드 부분 -->
+    <header class="head">
+        <div>
+            <ul class='head_left'>
+                <li><a href='index.html'><i class="fa fa-code-fork" aria-hidden="true"></i></a></li>
+                <li><a href='index.html'><span>Hello World</span></a></li>
+            </ul>
+        </div>
+
+        <div class="head_right">
+            <span id="login"><a href="#">LOG-IN</a></span>
+        </div>
+    </header>
+    <!-- 헤드 부분 -->
+
+    
+    <!-- 네비게이션 부분 -->
+    <nav class=nav>
+        <div>
+            <ul class="nav_list">
+            <li class="nav_front">FRONT-END</li>
+            <li class="nav_back">BACK-END</li>
+            <li class="nav_full">FULLSTACK</li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 네비게이션 부분 -->
+
+    <!-- 머리글 -->
+    <h1 class="top_name">&lt; HELLO WORLD &gt;</h1>
+    <!-- 머리글 -->
+
+    <section>
+        <article>
+
+        </article>
+    </section>
+
+    <!-- 바닥글 -->
+    <footer>
+        <h1 class="bottom_name">&lt; / HELLO WORLD &gt;</h1>
+    </footer>
+    <!-- 바닥글 -->
+
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
