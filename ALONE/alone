@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALONE</title>
+    <link rel="stylesheet" href="alone.css">
+    <script src="alone.js"></script>
+    <script src="https://kit.fontawesome.com/1061bd59d7.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<input id="toggle" type="button" value="CAT" onclick="handler(this);">
+
+<h1>ALONE</h1>
+
+<nav class="nav-bar">
+    <ul class="nav-logo">
+        <li><i class="fas fa-dog"></i></li>
+        <li>ALONE</li>
+        <li><i class="fas fa-cat"></i></li>
+    </ul>
+    
+    <ul class="nav-menu">
+        <script>menus.navmenu();</script>
+    </ul>
+    
+    <ul class="nav-icon">
+        <li><a href="#"></a><i class="fab fa-facebook-f"></i></li>
+        <li><a href="#"></a><i class="fab fa-twitter"></i></li>
+        <li><a href="#"></a><i class="fab fa-instagram"></i></li>
+    </ul>
+</nav>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quis neque at eaque laboriosam voluptatum consectetur,
+    dicta, illum officiis, commodi quibusdam dolorum eveniet
+    tempore asperiores facere ex. Modi iure dolorum tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quis neque at eaque laboriosam voluptatum consectetur,
+    dicta, illum officiis, commodi quibusdam dolorum eveniet
+    tempore asperiores facere ex. Modi iure dolorum tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quis neque at eaque laboriosam voluptatum consectetur,
+    dicta, illum officiis, commodi quibusdam dolorum eveniet
+    tempore asperiores facere ex. Modi iure dolorum tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quis neque at eaque laboriosam voluptatum consectetur,
+    dicta, illum officiis, commodi quibusdam dolorum eveniet
+    tempore asperiores facere ex. Modi iure dolorum tempora.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quis neque at eaque laboriosam voluptatum consectetur,
+    dicta, illum officiis, commodi quibusdam dolorum eveniet
+    tempore asperiores facere ex. Modi iure dolorum tempora.</p>
+</body>
+</html>
+var Body = {
+    backcolor : function(color) {
+        document.querySelector('body').style.backgroundColor = color;
+    },
+    fontcolor : function(color) {
+        document.querySelector('body').style.color = color;
+    }
+}
+ var link = {
+    listcolor : function(color) {
+        var lists = document.querySelectorAll('a');
+        var i = 0;
+        while (i < lists.length) {
+            lists[i].style.color = color;
+            i = i + 1;
+        }
+    }
+ }
+
+function handler(self) {
+    var color = document.querySelector('body');
+    if (self.value === 'CAT') {
+    Body.backcolor('#FFFC00');
+    Body.fontcolor('green');
+    self.value = 'DOG';
+    link.listcolor('green');
+} else {
+    Body.backcolor('#1DA1F2');
+    Body.fontcolor('black');
+    self.value = 'CAT';
+    link.listcolor('black');
+    }
+ }
+
+var menus = {
+    navmenu : function() {
+var menu = ['APPLE', 'KIWI', 'GRAPE','CHERRY'];
+var i = 0;
+while (i < menu.length) {
+    document.write('<li>'+menu[i]+'</li>');
+    i = i + 1;
+        }
+    }
+}
+*{ box-sizing: border-box;}
+
+h1{text-align: center;
+font-size: 100px;
+margin-bottom: 10px;
+}
+
+body {background-color: #1DA1F2;
+    margin: 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{text-decoration: none;
+}
+
+a:visited{color: black;
+}
+
+#toggle {
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    right : 20px;
+    top : 30px;
+    border: black 4px solid;
+    border-radius: 30px;
+    color: black;
+    outline: none;
+    background-color: Transparent;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding : 8px 12px;
+    background-color: tomato;
+}
+
+.nav-logo {
+    display: flex;
+    margin : 24px 0px;
+    padding-left: 0px;
+}
+
+.nav-logo li{
+    margin : 0px 6px;
+    font-size: 26px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    font-size: 26px;
+    padding-left: 0px;
+}
+
+.nav-menu li{
+    margin : 0px 12px;
+}
+
+.nav-icon {
+    display: flex;
+    flex-direction: row;
+    margin : 24px 8px;
+}
+
+.nav-icon li {
+    margin : 0px 8px;
+}
+
+@media (max-width:800px){
+    .nav-bar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding : 8px 24px;
+        
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-menu li{
+        padding: 8px;
+    }
+
+    .nav-icon{
+        padding-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+
+    p{display : none;}
+}
